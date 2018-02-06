@@ -3,8 +3,8 @@ module PinPayment
     attr_accessor :token,  :display_number,  :scheme,  :address_line1,  :address_line2,  :address_city,  :address_postcode,  :address_state,  :address_country
     protected     :token=, :display_number=, :scheme=, :address_line1=, :address_line2=, :address_city=, :address_postcode=, :address_state=, :address_country=
 
-    attr_accessor :number,  :expiry_month,  :expiry_year,  :cvc,  :name
-    protected     :number,  :expiry_month,  :expiry_year,  :cvc,  :name
+    attr_accessor :number, :expiry_month,  :expiry_year,  :cvc,  :name
+    protected     :number, :expiry_month,  :cvc
     protected     :number=, :expiry_month=, :expiry_year=, :cvc=, :name=
 
     # Use the pin API to create a credit card token, usable for 1 month from creation.
